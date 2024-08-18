@@ -1,16 +1,68 @@
 /* The main styling for the entire application */
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Text:ital@0;1&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 .Home {
   text-align: center;
 }
 
-/* Styling for the element with class name 'Title' */
-#Intro-text {
-  font-family: "DM Serif Text", serif;
-  font-size: 100px;
-  color: #3E556F;
+.home-container {
   margin-top: 3%;
+  justify-content: left;
+  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+#hi-text{
+  font-family: "DM Serif Text", serif;
+  color: #2E6C86;  
+  font-size: 150px;
+  margin-bottom: -3%;
+}
+#name-text {
+  font-family: "DM Serif Text", serif;
+  color: #3E556F;
+  font-size: 150px;
+  margin-top: 0%;
+}
+
+#description {
+  font-family: "DM Sans", sans-serif;
+  color: #3E556F;
+  font-size: 30px;
+  margin-top: -1%;
+}
+
+.photo {
+  width: 35px;
+  height: 35px;
+}
+
+.contact-container {
+  margin-top: 7%;
+}
+.contact {
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  color: #3E556F;
+  font-family: "DM Serif Text", serif;
+  margin-top: 0%;
+  margin-bottom: 1%;
+  width: 13%;
+
+}
+
+.contact:hover {
+  font-weight: bold;
+  font-size: 21px;
+}
+
+.contact-item {
+  margin-left: 5%;
+  margin-top: 2%;
 }
 
 .About-text {
@@ -19,5 +71,70 @@
   text-align: center;
   font-size: 20px;
   font-family: "DM Serif Text", serif;
+}
+
+ .dark-rectangle {
+  height: 40px;
+  width: 1000px;
+  background-color: #2E6C86;
+  rotate: 40deg;
+  margin-left: 33%;
+  margin-top: 5%;
+  position: fixed;
+}
+
+.light-rectangle {
+  height: 40px;
+  width: 1000px;
+  background-color: #B4C7DD;
+  rotate: 40deg;
+  margin-left: 31%;
+  margin-top: 5%;
+  position: fixed;
+} 
+
+.circles {
+  z-index: 1;
+}
+.circle-1 {
+  height: 220px;
+  width: 220px;
+  background-color: #CFDDED;
+  border-radius: 50%;
+  margin-left: 31%;
+  margin-top: 5%;
+  position: absolute;
+  margin-left: 31%;
+  margin-top: -25%;
+  animation: circle-float 5s infinite;
 
 }
+
+.circle-2 {
+  height: 125px;
+  width: 125px;
+  background-color: #CFDDED;
+  border-radius: 50%;
+  position: absolute;
+  margin-left: 51%;
+  margin-top: -25%;
+}
+
+.circle-3 {
+  height: 160px;
+  width: 160px;
+  background-color: #CFDDED;
+  border-radius: 50%; 
+  position: absolute;
+  margin-left: 0%;
+  margin-top: -50%;
+}
+@keyframes circle-float {
+  from {top: 50px;}
+  to {top: 250px;}
+}
+
+@keyframes hi-slide-in {
+  from {top: 0px;}
+  to {top: 250px;}
+} 

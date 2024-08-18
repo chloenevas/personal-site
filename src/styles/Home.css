@@ -1,0 +1,23 @@
+/* The main styling for the entire application */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.Home {
+  text-align: center;
+}
+
+/* Styling for the element with class name 'Title' */
+#Intro-text {
+  font-family: "DM Serif Text", serif;
+  font-size: 100px;
+  color: #3E556F;
+  margin-top: 3%;
+}
+
+.About-text {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+  font-family: "DM Serif Text", serif;
+
+}

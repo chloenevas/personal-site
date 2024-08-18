@@ -1,0 +1,72 @@
+/* The main styling for the entire application */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: #F5EFEB; /* Your desired background color */
+  height: 100%;
+}
+
+.App {
+  text-align: center;
+  background-color: #F5EFEB;
+}
+
+.Current-page {
+  margin: 3px;
+  font-size: 60px;
+  font-family: "DM Serif Text", serif;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.Nav-bar {
+  text-align: center;
+  justify-content: center;
+  margin-right: 2%;
+  margin-top: 1%;
+  font-family: "DM Serif Text", serif;
+  font-weight: lighter;
+  display: flex;
+  font-size: 20px;
+  color: #3D7A94;
+}
+
+.Nav-bar-item {
+  text-align: center;
+}
+
+.Focus {
+  color: #3E556F;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.Nav-bar-item:not(:last-child)::after {
+  content: "•"; /* Adds a dot after the content of the element */
+  margin: 10px;
+  color: #3D7A94;
+  text-decoration: none;
+}
+
+.Nav-bar-item:hover {
+  font-weight: bold;
+  cursor: grabbing;
+  color: #3E556F;
+}
+
+#Name-logo {
+  color: #3E556F;
+  margin-right: auto;
+  margin-left: 2%
+}
+
+#Name-logo:hover {
+  font-weight: bold;
+  cursor: grabbing;
+  color: #3E556F;
+}
+
+
+

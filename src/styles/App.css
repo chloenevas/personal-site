@@ -28,11 +28,25 @@ body, html {
   text-align: center;
 }
 
-.Nav-bar {
+.top-constants {
+  top: 0%; 
+  position: fixed;
+  z-index: 3;
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.top-opaque {
+  background-color: #F5EFEB;
+}
+
+.nav-bar {
   text-align: center;
   justify-content: center;
-  margin-right: 3%;
-  margin-top: 1%;
+  margin-right: 2%;
   font-family: "DM Serif Text", serif;
   font-weight: lighter;
   display: flex;
@@ -43,7 +57,7 @@ body, html {
 
 .Nav-bar-item {
   text-align: center;
-  z-index: 2;
+  z-index: 3;
   position: relative;
 }
 
@@ -59,8 +73,6 @@ body, html {
   font-style: italic;
 }
 
-
-
 .Nav-bar-item:hover {
   font-weight: bold;
   cursor: grabbing;
@@ -69,10 +81,12 @@ body, html {
 }
 
 #Name-logo {
+  margin-left: 2%;
+  z-index: 3;
+  font-family: "DM Serif Text", serif;
+  display: flex;
+  font-size: 20px;
   color: #3E556F;
-  margin-right: auto;
-  margin-left: 3%;
-  z-index: 2;
 }
 
 #Name-logo:hover {

@@ -9,7 +9,7 @@ function AboutMe() {
 
   return (
     <div>
-      <div id="title"> About Me </div>
+      <div id="about-title"> About Me </div>
       <div className="dark-rectangle-about"></div>
       <div className="light-rectangle-about"></div>
 

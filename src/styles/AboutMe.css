@@ -21,6 +21,7 @@
     width: 100vh; /* Full width */
     margin-left: 3%;
     margin-top: -5%;
+    position: relative;
 }
 
 #photo {
@@ -28,6 +29,8 @@
     width: auto;
     margin-left: 8%;
     margin-top: 3%;
+    z-index: 2;
+
 }
 
 .text {
@@ -39,7 +42,7 @@
   padding: 20px;
   margin: 3%;
   font-family: "DM Sans", sans-serif;
- 
+  line-height: 1.4;
   justify-content: center;
   align-content: center;
 }
@@ -47,26 +50,32 @@
 #blurb-1 {
   width: 250px;
   height: 250px;
+  position: absolute;
   grid-column-start: col-start;
   grid-column-end: line3;
   grid-row-start: row-line2;
   grid-row-end: row-line5;
   text-align: center;
+  animation: blurb1-2-slide-in 2.8s; 
 }
 
 #blurb-2 {
   width: 270px;
   height: 270px;
+  position: absolute;
   grid-column-start: line5;
   grid-column-end: line7;
   grid-row-start: row-start;
   grid-row-end: row-line2;
   text-align: center;
+  animation: blurb1-2-slide-in 1.5s; /* 2s duration, ease timing, and forwards fill mode */
+
 }
 
 #blurb-3 {
   width: 450px;
   height: 450px;
+  position: absolute;
   grid-column-start: line2;
   grid-column-end: line5;
   grid-row-start: row-line3;
@@ -75,9 +84,38 @@
   vertical-align: top;
   display: flex;
   align-items: flex-start;
-  
+  animation: blurb3-slide-in 2s; /* 2s duration, ease timing, and forwards fill mode */
+
 }
 
-.no-scroll { 
-   overflow: hidden;
+ .dark-rectangle-about {
+  height: 40px;
+  width: 1000px;
+  background-color: #2E6C86;
+  rotate: 40deg;
+  margin-left: -38%;
+  margin-top: 15%;
+  position: fixed;
+  z-index: 1;
 }
+
+.light-rectangle-about {
+  height: 40px;
+  width: 1000px;
+  background-color: #B4C7DD;
+  rotate: 40deg;
+  margin-left: -38%;
+  margin-top: 17%;
+  position: fixed;
+  z-index: 1;
+} 
+
+@keyframes blurb1-2-slide-in {
+  from {top: -500px;}
+  to {top: 0px;}
+} 
+
+@keyframes blurb3-slide-in {
+  from {top: 500px;}
+  to {top: 0px;}
+} 

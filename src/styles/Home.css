@@ -13,6 +13,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
+
 }
 
 #hi-text{
@@ -20,12 +21,15 @@
   color: #2E6C86;  
   font-size: 150px;
   margin-bottom: -3%;
+  z-index: 2;
 }
 #name-text {
   font-family: "DM Serif Text", serif;
   color: #3E556F;
   font-size: 150px;
   margin-top: 0%;
+  z-index: 2;
+
 }
 
 #description {
@@ -33,15 +37,20 @@
   color: #3E556F;
   font-size: 30px;
   margin-top: -1%;
+  z-index: 2;
+
 }
 
 .photo {
   width: 35px;
   height: 35px;
+  z-index: 2;
+
 }
 
 .contact-container {
   margin-top: 7%;
+  
 }
 .contact {
   display: flex;
@@ -52,6 +61,7 @@
   margin-top: 0%;
   margin-bottom: 1%;
   width: 13%;
+  z-index: 2;
 
 }
 
@@ -63,6 +73,8 @@
 .contact-item {
   margin-left: 5%;
   margin-top: 2%;
+  z-index: 2;
+
 }
 
 .About-text {
@@ -73,7 +85,7 @@
   font-family: "DM Serif Text", serif;
 }
 
- .dark-rectangle {
+ .dark-rectangle-home {
   height: 40px;
   width: 1000px;
   background-color: #2E6C86;
@@ -81,9 +93,10 @@
   margin-left: 33%;
   margin-top: 5%;
   position: fixed;
+  z-index: 2;
 }
 
-.light-rectangle {
+.light-rectangle-home {
   height: 40px;
   width: 1000px;
   background-color: #B4C7DD;
@@ -91,11 +104,9 @@
   margin-left: 31%;
   margin-top: 5%;
   position: fixed;
+  z-index: 2;
 } 
 
-.circles {
-  z-index: 1;
-}
 .circle-1 {
   height: 220px;
   width: 220px;
@@ -106,8 +117,8 @@
   position: absolute;
   margin-left: 31%;
   margin-top: -25%;
-  animation: circle-float 5s infinite;
-
+  animation: circle1-float 20s infinite linear;
+  z-index: 1;
 }
 
 .circle-2 {
@@ -118,6 +129,8 @@
   position: absolute;
   margin-left: 51%;
   margin-top: -25%;
+  animation: circle2-float 20s infinite linear;
+  z-index: 1;
 }
 
 .circle-3 {
@@ -128,10 +141,35 @@
   position: absolute;
   margin-left: 0%;
   margin-top: -50%;
+  animation: circle3-float 20s infinite linear;
+  z-index: 1;
 }
-@keyframes circle-float {
-  from {top: 50px;}
-  to {top: 250px;}
+
+@keyframes circle1-float {
+  0% { transform: translate(-650px, 0px); }
+  35% { transform: translate(700px, -100px); }
+  55% { transform: translate(-200px, -450px); }
+  80% { transform: translate(-100px, 250px); }
+  100% { transform: translate(-650px, 0px); }
+}
+
+@keyframes circle2-float {
+  0% { transform: translate(500px, 200px); }
+  10% { transform: translate(300px, 300px); }
+  30% { transform: translate(0px, -350px); }
+  50% { transform: translate(-250px, 300px); }
+  70% { transform: translate(-850px, 100px); }
+  100% { transform: translate(500px, 200px); }
+}
+
+@keyframes circle3-float {
+  0% { transform: translate(-20px, -20px); }
+  6% { transform: translate(-200px, 60px); }
+  25% { transform: translate(100px, 550px); }
+  50% { transform: translate(1250px, 400px); }
+  65% { transform: translate(1000px, -40px); }
+  85% { transform: translate(450px, 600px); }
+  100% { transform: translate(-20px, -20px); }
 }
 
 @keyframes hi-slide-in {

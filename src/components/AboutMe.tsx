@@ -6,18 +6,21 @@ import photo from "../assets/photo.jpg"
 
 function AboutMe() {
 
-  document.body.classList.add("no-scroll");
 
   return (
     <div>
       <div id="title"> About Me </div>
+      <div className="dark-rectangle-about"></div>
+      <div className="light-rectangle-about"></div>
+
       <div className="about-container">
         <img id="photo" src={photo} alt="Photo of Chloe" />
 
         <div className="circles">
           <div className="text" id="blurb-1">
             I'm from Westport, CT <br />
-            and I'm currently a junior at Brown University studying Applied Math-Computer Science.
+            and I'm currently a junior at Brown University studying Applied
+            Math-Computer Science.
           </div>
           <div className="text" id="blurb-2">
             In my free time, I love <br />

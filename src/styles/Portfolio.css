@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Text:ital@0;1&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+#title {
+  font-family: "DM Serif Text", serif;
+  font-size: 75px;
+  color: #3e556f;
+  margin-top: 3%;
+  text-align: center;
+}
+
+.rectangle-portfolio {
+  height: 30px;
+  width: 105vw;
+  background-color: #b4c7dd;
+  margin-top: 0%;
+  margin-left: -1%;
+  border-style: solid;
+  border-width: 4px;
+  border-color: #3e556f;
+  justify-content: center;
+}
+
+.project-container {
+  display: flex;
+  margin-top: -0.5%;
+  justify-content: center;
+}
+.project {
+  background-color: #e2e5e9;
+  width: 420px;
+  height: 420px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #3e556f;
+  margin: 2%;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  border-radius: 5%;
+}
+
+.project-title {
+  font-family: "DM Serif Text", serif;
+  font-size: 40px;
+  margin-top: 0%;
+  color: #3e556f;
+  text-align: center;
+}
+
+.project-photo {
+    height: 220px;
+    width: 280px;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.project-description {
+    font-family: "DM Sans", sans-serif;
+    color: #3e556f;
+    font-size: 20px;
+    margin-top: 3%;
+    line-height: 1.4;
+    margin-left: 3%;
+    margin-right: 3%;
+    text-align: center;
+}
+
+.project:hover {
+    box-shadow: inset;
+    cursor: grabbing;
+    transform: scale(1.02);
+}

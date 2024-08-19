@@ -25,36 +25,42 @@ function App() {
     } 
   }
 
+  // const checkScroll = () => {
+  //   return currentPage === "About Me" ?  document.body.classList.add("no-scroll") : ""
+  // };
+
+  // document.body.classList.add("no-scroll");
+
   return (
-    <div className="App">
+    <div className={`App`}>
       <div className="Nav-bar">
         <div id="Name-logo" onClick={() => setCurrentPage("Home")}>
           Chloe Nevas
         </div>
         <div
-          className={`Nav-bar-item ${currentPage === "Home" ? "Focus" : ""}`}
+          className={`${currentPage === "Home" ? "Focus" : ""} Nav-bar-item `}
           onClick={() => setCurrentPage("Home")}
         >
           Home
         </div>
         <div
-          className={`Nav-bar-item ${
+          className={`  ${
             currentPage === "About Me" ? "Focus" : ""
-          }`}
+          } Nav-bar-item`}
           onClick={() => setCurrentPage("About Me")}
         >
           About Me
         </div>
         <div
-          className={`Nav-bar-item ${
+          className={`${
             currentPage === "Portfolio" ? "Focus" : ""
-          }`}
+          } Nav-bar-item `}
           onClick={() => setCurrentPage("Portfolio")}
         >
           Portfolio
         </div>
         <div
-          className={`Nav-bar-item ${currentPage === "Resume" ? "Focus" : ""}`}
+          className={`${currentPage === "Resume" ? "Focus" : ""} Nav-bar-item `}
           onClick={() => setCurrentPage("Resume")}
         >
           Resume

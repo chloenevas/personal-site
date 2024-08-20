@@ -59,6 +59,7 @@
   text-align: center;
   flex-direction: column;
   width: 80%;  
+  justify-content: center;
 }
 
 .project-header {
@@ -92,13 +93,25 @@
   text-align: left;
 }
 
-.project-container{
-  display: flex;
-  flex-direction: column;
+.inner-project-container{
+   /* display: flex;  */
+    /* flex-direction: vertical; */
+    justify-content: center;
+    width: 100%;
+    background-color: #dee8f2;
+    box-shadow: 0 0 25px 5px #3e556f;
+    border-radius: 10px;
+    overflow-y: auto; 
+    height: 430px; 
+    margin: 0 auto;
+  overflow: hidden;
+ 
 }
-.blue-box {
-    display: flex;
-    /* align-items: center; */
+
+.project-content {
+    /* display: flex;  */
+    /* flex-direction: vertical; */
+     /* align-items: center;
     justify-content: center;
     width: 100%;
     background-color: #dee8f2;
@@ -108,33 +121,45 @@
     margin-top: 2%;
     box-shadow: 0 0 25px 5px #3e556f;
     border-radius: 10px;
-    overflow-y: auto; 
-    height: 330px;
-    
+    overflow-y: auto;  
+    height: 330px;  */
+    padding: 10px;
+  justify-content: center;
+  width: 100%;
+  border-radius: 40px;
+  display: inline-flex
 }
-.project-content {
-    display: flex;
-    /* align-items: center; */
-    justify-content: center;
+
+.slider {
+  white-space: nowrap;
+  transition: ease 1000ms;
+
+}
+
+.please-work {
+  display: flex;
+  flex-direction: vertical;
+  justify-content: center;
     width: 100%;
-    /* background-color: #dee8f2;
+    background-color: #dee8f2;
     padding: 40px;
     padding-top: 15px;
     padding-bottom: 60px;
     margin-top: 2%;
     box-shadow: 0 0 25px 5px #3e556f;
     border-radius: 10px;
-    overflow-y: auto;  */
-    height: 330px;
+    overflow-y: auto;  
+    height: 330px;  
 }
-
 .project-photo {
     height: auto;
     width: 600px;
     margin-top: 2%;
     border-radius: 10px;
     box-shadow: 0 0 15px 10px #3e556f;
-}
+    justify-content: left;
+    margin-left: 3%;
+    margin-right: 3%;}
 
 .pacman {
     height: auto;
@@ -166,7 +191,7 @@
 .dot-container {
   display: flex;
   justify-content: center;
-  margin-top: -2.5%;
+  /* margin-top: -2.5%; */
 }
 
 .slide-dot {
@@ -175,6 +200,7 @@
   width: 10px;
   background-color: #89A7BC;
   margin-left: 2%;
+  /* margin-top: -5%; */
 }
 
 .slide-dot:hover {
@@ -187,7 +213,7 @@
   width: 20px;
   height: 20px;
   justify-content: center;
-  margin-top: 15%;
+  margin-top: auto;
   margin-bottom: auto;
 }
 

@@ -1,7 +1,8 @@
 import React from "react";
 import "../styles/Portfolio.css"
+import BrownFit from "./BrownFit";
 
-import brownFit from "../assets/brownFit.jpg"
+
 import weensyGif from "../assets/weensyTeaser.gif"
 import pacmanGif from "../assets/pacman.gif";
 import websiteGif from "../assets/website.gif";
@@ -11,27 +12,18 @@ function Portfolio() {
     <div>
       <div className="header">
         <div id="portfolio-title"> Portfolio </div>
-        {/* <div className="underline-portfolio"> </div> */}
+        <div className="underline-portfolio"> </div>
       </div>
 
-      <div className="projects-container">
+      <div className="all-projects">
+        <div><BrownFit /></div>
         <div className="project">
-          <div className="project-title">BrownFit</div>
-          <div className="project-content">
-            <img
-              className="project-photo"
-              src={brownFit}
-              alt="Photo of BrownFit"
-            />
-            <div className="project-description">
-              Co-created a web app that allows users to generate customized
-              workouts by entering preferred workout duration, targeted muscle
-              groups, and fitness goals.
-            </div>
-          </div>
-        </div>
-        <div className="project">
-          <div className="project-title">WeensyOS</div>
+          <div className="project-header">
+            <div className="project-title header-item">WeensyOS</div>
+            <div className="header-info header-item">Creator</div>
+            <div className="header-info header-item">C++</div>
+            <div className="header-info header-item">March 2024</div>
+          </div>{" "}
           <div className="project-content">
             <img
               src={weensyGif}
@@ -45,7 +37,14 @@ function Portfolio() {
           </div>
         </div>
         <div className="project">
-          <div className="project-title">Pac-Man</div>
+          <div className="project-header">
+            <div className="project-title header-item">Pac-Man</div>
+            <div className="header-info header-item">Creator</div>
+            <div className="header-info header-item">Java</div>
+            <div className="header-info header-item">
+              November-December 2022
+            </div>
+          </div>{" "}
           <div className="project-content">
             <img
               src={pacmanGif}
@@ -53,7 +52,8 @@ function Portfolio() {
               className="pacman" // Optional styling to fit the container
             />
             <div className="project-description">
-              Talk about pacman and how it uses bfs for the ghosts 
+              Talk about pacman and how it uses bfs for the ghosts and talk
+              about it a little more too some more spaaaaace
             </div>
           </div>
         </div>
@@ -72,7 +72,12 @@ function Portfolio() {
           </div>
         </div>
         <div className="project">
-          <div className="project-title">My Personal Website!</div>
+          <div className="project-header">
+            <div className="project-title header-item">My Personal Website!</div>
+            <div className="header-info header-item">Crreator</div>
+            <div className="header-info header-item">Typescript, CSS</div>
+            <div className="header-info header-item">December 2023</div>
+          </div>{" "}
           <div className="project-content">
             <img
               src={websiteGif}
@@ -80,7 +85,8 @@ function Portfolio() {
               className="project-photo" // Optional styling to fit the container
             />
             <div className="project-description">
-              Talk about my little website that i made!
+              Talk about my little website that i made! and i'll taalk some
+              moreeee and some more and blah blah
             </div>
           </div>
         </div>

@@ -1,17 +1,21 @@
 import React from "react";
+import "../styles/Resume.css";
 
 const Resume = () => {
-    return (
+  return (
+    <div>
+      <div></div>
       <div>
         <iframe
-        src="/chloe-nevas-resumepdf.pdf" // Ensure this path is correct
-        width="100%"
-        height="800px"
-        title="Resume"
-            >
-                </iframe>
+          className="iframe"
+          src="/chloe-nevas-resumepdf.pdf"
+          width="100%"
+          height="800px"
+          title="Resume"
+        ></iframe>
       </div>
-    );
+    </div>
+  );
 };
 
 export default Resume;

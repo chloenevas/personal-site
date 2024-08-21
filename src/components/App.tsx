@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import Home from "./Home";
 import Portfolio from "./Portfolio";
@@ -30,6 +30,14 @@ function App() {
 
   // document.body.classList.add("no-scroll");
 
+    useEffect(() => {
+      if (currentPage === "Portfolio") {
+        document.body.classList.add("scroll");
+      } else {
+        document.body.classList.remove("scroll");
+      }
+    }, [currentPage]);
+  
   return (
     <div className={`App`}>
       <div className={`${currentPage === "Portfolio" ? "top-opaque" : ""} top-constants `}>

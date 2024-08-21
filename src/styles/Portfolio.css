@@ -4,11 +4,6 @@
 .header {
     display: flex;
     flex-direction: column;
-    background-color: #F5EFEB;
-    height: 50%;
-    border-bottom: solid;
-    border-width: 2px;
-    border-color: #3e556f;
     margin-top: -1%;
 }
 
@@ -17,43 +12,54 @@
   font-family: "DM Serif Text", serif;
   font-size: 75px;
   color: #3e556f;
-  margin-top: 4%;
+  background-color:rgba(245, 239, 235, 0.9);
+
+  margin-top: 10vh;
   margin-bottom: 10%;
   text-align: center;
   width: 100%;
-  height: 20%;
-  background-color: #F5EFEB;
+    height: 18vh;
   z-index: 4;
   position: fixed;
   animation: portfolio-slide-in 2s;
-  border-bottom: solid;
-    border-width: 2px;
-    border-color: #3e556f;
-
 }
+
+
 
 .underline-portfolio {
   height: 5px;
   width: 35vw;
-  margin-top: 11%;
+  margin-top: 24vh;
   background-color: #b4c7dd;
   margin-left: 33%;
   z-index: 5;
   position: fixed;
   animation: line-slide-in 2s;
+}
 
+.header-border {
+  height: 2px;
+  width: 100%;
+  margin-top: 28vh;
+  background-color: #3e556f;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 5;
+  position: fixed;
 }
 
 .all-projects {
   display: flex;
-  margin-top: 10.5%;
+  margin-top: 23vh;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
 
 .project {
-  margin: 4%;
+  margin-top: 4%;
+  margin-bottom: 4%;
+
   display: flex;
   align-items: left;
   text-align: center;
@@ -64,6 +70,7 @@
 .project-header {
   display: flex;
   margin-bottom: 0.5%;
+  flex-wrap: wrap;
   /* gap: 15px; */
 }
 
@@ -73,7 +80,7 @@
 
 .header-item::after {
   content: "|"; /* Adds a dot after the content of the element */
-  margin: 10px;
+  margin: 1vw;
   font-family: "DM Serif Text", serif;
   font-size: 40px;
 }
@@ -87,7 +94,7 @@
 
 .header-info {
   font-family: "DM Sans", serif;
-  font-size: 20px;
+  font-size: 1.25rem;
   /* margin-top: -1.5%; */
   text-align: left;
 }
@@ -95,36 +102,10 @@
 .project-container{
   display: flex;
   flex-direction: column;
+  width: 90vw;
+  
 }
-.blue-box {
-    display: flex;
-    /* align-items: center; */
-    justify-content: center;
-    width: 100%;
-    background-color: #dee8f2;
-    padding: 40px;
-    padding-top: 15px;
-    padding-bottom: 60px;
-    margin-top: 2%;
-    box-shadow: 0 0 25px 5px #3e556f;
-    border-radius: 10px;
-    height: 330px;
-    
-}
-.project-content {
-    /* display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 90%;
-    background-color: #dee8f2;
-    padding: 40px;
-    padding-top: 15px;
-    padding-bottom: 60px;
-    margin-top: 2%;
-    box-shadow: 0 0 25px 5px #3e556f;
-    border-radius: 10px;
-    height: 330px; */
-}
+
 
 .slide-content {    
     display: flex;
@@ -139,19 +120,21 @@
     box-shadow: 0 0 25px 5px #3e556f;
     border-radius: 10px;
     height: 320px;
+                transition: width 0.5s ease, height 0.5s ease; /* Smooth transition for width and height */
 
 }
 
 .project-photo {
-    height: auto;
-    width: 600px;
+    width: 40vw;
+    aspect-ratio: 16/8;
     margin-top: 2%;
     border-radius: 10px;
     box-shadow: 0 0 15px 10px #3e556f;
 }
 
+
 .pacman {
-    height: 330px;
+    height: 45vh;
     width: auto;
     justify-content: center;
     margin-top: 2%;
@@ -162,13 +145,16 @@
 .project-description {
     font-family: "DM Sans", sans-serif;
     color: #3e556f;
-    font-size: 20px;
+    font-size: 1.25rem;
     margin-top: 3%;
     /* width: 30%; */
     line-height: 1.4;
     margin-left: 3%;
     margin-right: 3%;
-    text-align: justify;    
+    text-align: justify;   
+     /* overflow-wrap: break-word; Break long words if necessary */
+  /* word-break: break-word; Ensures long words break properly */
+  /* hyphens: auto;  */
 }
 
 /* .project:hover {
@@ -227,3 +213,38 @@
   0% {transform: translateX(600px);}
   100% {transform: translateY(0px);}
 } 
+
+/* @media (max-width: 1400px) {
+  .slide-content {
+    flex-wrap: wrap;
+    height: 360px;
+  }
+} */
+
+@media (max-width: 1200px) {
+  .project-photo {
+    width: 50vw;
+  }
+}
+
+@media (max-width: 900px) {
+  .slide-content {
+    flex-wrap: wrap;
+    height: 400px;
+  }
+
+  .project-photo {
+    width: 65vw;
+  }
+}
+
+@media (max-width: 800px) {
+  .slide-content {
+    flex-wrap: wrap;
+    height: 470px;
+  }
+
+  .project-photo {
+    width: 75vw;
+  }
+}

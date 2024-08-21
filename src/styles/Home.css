@@ -2,9 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Text:ital@0;1&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
+.body {
+  font-size: 10px;
+}
 .Home {
   text-align: center;
 }
+
 
 .home-container {
   margin-top: 3%;
@@ -19,15 +23,15 @@
 #hi-text{
   font-family: "DM Serif Text", serif;
   color: #2E6C86;  
-  font-size: 150px;
-  margin-bottom: -3%;
+  font-size: 10rem;
+  /* margin-bottom: -3%; */
   z-index: 2;
 }
 #name-text {
   font-family: "DM Serif Text", serif;
   color: #3E556F;
-  font-size: 150px;
-  margin-top: 0%;
+  font-size: 10rem;
+  /* margin-top: 0%; */
   z-index: 2;
 
 }
@@ -87,10 +91,10 @@
 
  .dark-rectangle-home {
   height: 40px;
-  width: 1000px;
+  width: 100%;
   background-color: #2E6C86;
   rotate: 40deg;
-  margin-left: 33%;
+  margin-left: 17%;
   margin-top: 5%;
   position: fixed;
   z-index: 2;
@@ -98,10 +102,10 @@
 
 .light-rectangle-home {
   height: 40px;
-  width: 1000px;
+  width: 100%;
   background-color: #B4C7DD;
   rotate: 40deg;
-  margin-left: 31%;
+  margin-left: 15%;
   margin-top: 5%;
   position: fixed;
   z-index: 2;

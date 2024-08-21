@@ -6,7 +6,6 @@ import Pacman from "./Pacman";
 import BroadbandAccess from "./BroadbandAccess";
 import PersonalSite from "./PersonalSite";
 
-
 import weensyGif from "../assets/weensyTeaser.gif";
 import websiteGif from "../assets/website.gif";
 
@@ -16,6 +15,7 @@ function Portfolio() {
       <div className="header">
         <div id="portfolio-title"> Portfolio </div>
         <div className="underline-portfolio"> </div>
+        <div className="header-border"> </div>
       </div>
 
       <div className="all-projects">
@@ -25,10 +25,16 @@ function Portfolio() {
         <div>
           <WeensyOS />
         </div>
-        <div><PersonalSite /> </div>
+        <div>
+          <PersonalSite />{" "}
+        </div>
 
-        <div><Pacman /> </div>
-        <div><BroadbandAccess /> </div>
+        <div>
+          <Pacman />{" "}
+        </div>
+        <div>
+          <BroadbandAccess />{" "}
+        </div>
       </div>
     </div>
   );

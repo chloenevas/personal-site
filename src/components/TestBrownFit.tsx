@@ -1,11 +1,13 @@
 import React from "react";
-import { useState, useRef} from "react";
+import { useState, useRef } from "react";
 
 import "../styles/Portfolio.css";
 import home from "../assets/brownFit.jpg";
 import generate from "../assets/brownFitGenerate.jpg";
 import progress from "../assets/brownFitProgress.jpg";
 import additional from "../assets/brownFitAdditional.jpg";
+import pause from "../assets/pauseButton.png";
+import play from "../assets/play.png";
 
 import slideArrow from "../assets/slide-arrow.png";
 
@@ -62,37 +64,34 @@ function Slide3() {
   );
 }
 
+function TestBrownFit() {
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const slides = [1, 2, 3, 4];
+  const automaticSlide = 5000;
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
-function BrownFit() {
-    const [currentSlide, setCurrentSlide] = useState(0);
-    const slides = [
-        1, 2, 3, 4
-    ]
-const automaticSlide = 5000;
-const timeoutRef = useRef<NodeJS.Timeout | null>(null);
-
-function resetTimeout() {
-  if (timeoutRef.current) {
-    clearTimeout(timeoutRef.current);
+  function resetTimeout() {
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+    }
   }
-}
 
-React.useEffect(() => {
-  resetTimeout();
-
-  timeoutRef.current = setTimeout(
-    () =>
-      setCurrentSlide((prevSlide) =>
-        prevSlide === slides.length - 1 ? 0 : prevSlide + 1
-      ),
-    automaticSlide
-  );
-
-  return () => {
+  React.useEffect(() => {
     resetTimeout();
-  };
-}, [currentSlide]);
-  
+
+    timeoutRef.current = setTimeout(
+      () =>
+        setCurrentSlide((prevSlide) =>
+          prevSlide === slides.length - 1 ? 0 : prevSlide + 1
+        ),
+      automaticSlide
+    );
+
+    return () => {
+      resetTimeout();
+    };
+  }, [currentSlide]);
+
   const accessSlide = (slideNum: Number) => {
     switch (slideNum) {
       case 0:
@@ -103,7 +102,6 @@ React.useEffect(() => {
         return <Slide2 />;
       case 3:
         return <Slide3 />;
-      
     }
   };
   return (
@@ -111,26 +109,31 @@ React.useEffect(() => {
       <div className="project-header">
         <div className="project-title header-item">BrownFit</div>
         <div className="header-info header-item">Co-creator</div>
-        <div className="header-info header-item">Java, Typescript, React, CSS</div>
+        <div className="header-info header-item">
+          Java, Typescript, React, CSS
+        </div>
         <div className="header-info header-item">December 2023</div>
       </div>
       <div className="project-container">
         <div className="project-content">{accessSlide(currentSlide)}</div>
 
-        <div className="dot-container">
-          {slides.map((_, idx) => (
-            <div
-              key={idx}
-              className={`slide-dot ${
-                currentSlide === idx ? "active-dot" : ""
-              }`}
-              onClick={() => setCurrentSlide(idx)}
-            />
-          ))}
+        <div className="slideshow-nav">
+          <div className="dot-container">
+            {slides.map((_, idx) => (
+              <div
+                key={idx}
+                className={`slide-dot ${
+                  currentSlide === idx ? "active-dot" : ""
+                }`}
+                onClick={() => setCurrentSlide(idx)}
+              />
+            ))}
+          </div>
+          <img className="play-pause" src={play} alt="Photo of BrownFit" />
         </div>
       </div>
     </div>
   );
 }
 
-export default BrownFit;
+export default TestBrownFit;

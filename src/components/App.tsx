@@ -5,6 +5,7 @@ import Home from "./Home";
 import Portfolio from "./Portfolio";
 import Resume from "./Resume";
 import AboutMe from "./AboutMe";
+import TestPortfolio from "./TestPortfolio";
 
 import "../styles/App.css";
 
@@ -21,6 +22,8 @@ function App() {
         return <Resume />;
       case "About Me":
         return <AboutMe />;
+      case "Test Portfolio":
+        return <TestPortfolio />;
     }
   };
 
@@ -40,7 +43,11 @@ function App() {
   
   return (
     <div className={`App`}>
-      <div className={`${currentPage === "Portfolio" ? "top-opaque" : ""} top-constants `}>
+      <div
+        className={`${
+          currentPage === "Portfolio" ? "top-opaque" : ""
+        } top-constants `}
+      >
         <div id="Name-logo" onClick={() => setCurrentPage("Home")}>
           Chloe Nevas
         </div>
@@ -75,6 +82,14 @@ function App() {
           >
             Resume
           </div>
+          {/* <div
+            className={`${
+              currentPage === "Test Portfolio" ? "Focus" : ""
+            } Nav-bar-item `}
+            onClick={() => setCurrentPage("Test Portfolio")}
+          >
+            Test Portfolio
+          </div> */}
         </div>
       </div>
       <div>{switchPage()}</div>

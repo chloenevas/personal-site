@@ -5,18 +5,14 @@ const Resume = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  
+
   return (
     <div>
       <div></div>
       <div>
-        <iframe
-          className="iframe"
-          src="/resume.pdf"
-          width="100%"
-          height="800px"
-          title="Resume"
-        ></iframe>
+        <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+          View Resume
+        </a>
       </div>
     </div>
   );

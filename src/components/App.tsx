@@ -18,8 +18,8 @@ function App() {
         return <Home />;
       case "Portfolio":
         return <Portfolio />;
-      case "Resume":
-        return <Resume />;
+      // case "Resume":
+      //   return <Resume />;
       case "About Me":
         return <AboutMe />;
     }
@@ -42,7 +42,9 @@ function App() {
     <div className={`App`}>
       <div
         className={`${
-          currentPage === "Resume" || currentPage === "Portfolio" ? "top-opaque" : ""
+          currentPage === "Resume" || currentPage === "Portfolio"
+            ? "top-opaque"
+            : ""
         } top-constants `}
       >
         <div onClick={() => setCurrentPage("Home")}>
@@ -75,9 +77,16 @@ function App() {
             className={`${
               currentPage === "Resume" ? "Focus" : ""
             } Nav-bar-item `}
-            onClick={() => setCurrentPage("Resume")}
+            // onClick={() => setCurrentPage("Resume")}
           >
-            Resume
+            <a
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: "inherit", textDecoration: "none" }}
+            >
+              Resume
+            </a>
           </div>
         </div>
       </div>

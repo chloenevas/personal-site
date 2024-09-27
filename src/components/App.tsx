@@ -2,10 +2,10 @@ import React from "react";
 import { useState, useEffect } from "react";
 
 import Home from "./Home";
-import Portfolio from "./Portfolio";
+import Portfolio from "./Portfolio/Portfolio";
 import Resume from "./Resume";
 import AboutMe from "./AboutMe";
-import TestPortfolio from "./TestPortfolio";
+import logo from "../assets/logo.png";
 
 import "../styles/App.css";
 
@@ -22,34 +22,31 @@ function App() {
         return <Resume />;
       case "About Me":
         return <AboutMe />;
-      case "Test Portfolio":
-        return <TestPortfolio />;
     }
   };
 
-  // const checkScroll = () => {
-  //   return currentPage === "About Me" ?  document.body.classList.add("no-scroll") : ""
-  // };
-
-  // document.body.classList.add("no-scroll");
-
-    useEffect(() => {
-      if (currentPage === "Portfolio") {
-        document.body.classList.add("scroll");
-      } else {
-        document.body.classList.remove("scroll");
-      }
-    }, [currentPage]);
+    // useEffect(() => {
+    //   if (
+    //     currentPage === "Portfolio" ||
+    //     currentPage === "Home" ||
+    //     currentPage === "About Me" ||
+    //      currentPage === "Resume"
+    //   ) {
+    //     document.body.classList.add("scroll");
+    //   } else {
+    //     document.body.classList.remove("scroll");
+    //   }
+    // }, [currentPage]);
   
   return (
     <div className={`App`}>
       <div
         className={`${
-          currentPage === "Portfolio" ? "top-opaque" : ""
+          currentPage === "Resume" || currentPage === "Portfolio" ? "top-opaque" : ""
         } top-constants `}
       >
-        <div id="Name-logo" onClick={() => setCurrentPage("Home")}>
-          Chloe Nevas
+        <div onClick={() => setCurrentPage("Home")}>
+          <img className="logo" src={logo} alt="Logo" />
         </div>
         <div className="nav-bar">
           <div
@@ -82,14 +79,6 @@ function App() {
           >
             Resume
           </div>
-          {/* <div
-            className={`${
-              currentPage === "Test Portfolio" ? "Focus" : ""
-            } Nav-bar-item `}
-            onClick={() => setCurrentPage("Test Portfolio")}
-          >
-            Test Portfolio
-          </div> */}
         </div>
       </div>
       <div>{switchPage()}</div>

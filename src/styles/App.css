@@ -6,7 +6,7 @@ body, html {
   padding: 0;
   background-color: #F5EFEB; /* Your desired background color */
   height: 100%;
-  overflow: hidden;
+  overflow: auto;
   overflow-x: hidden;
 }
 
@@ -78,16 +78,16 @@ body, html {
   
 }
 
-#Name-logo {
-  margin-left: 2%;
+.logo {
+  height: 13%;
+  width: 13%;
+  margin-left: 5%;
   z-index: 3;
-  font-family: "DM Serif Text", serif;
   display: flex;
-  font-size: 20px;
-  color: #3E556F;
+  margin-top: -1%;
 }
 
-#Name-logo:hover {
+.logo:hover {
   font-weight: bold;
   cursor: grabbing;
   color: #3E556F;

@@ -1,14 +1,18 @@
-import React from "react";
+import {useEffect} from "react";
 import "../styles/Resume.css";
 
 const Resume = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   return (
     <div>
       <div></div>
       <div>
         <iframe
           className="iframe"
-          src="/chloe-nevas-resumepdf.pdf"
+          src="/resume.pdf"
           width="100%"
           height="800px"
           title="Resume"

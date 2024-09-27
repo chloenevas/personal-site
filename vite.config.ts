@@ -9,7 +9,7 @@ export default defineConfig(() => {
     plugins: [react()],
     server: {
       open: true,
-      port: 8000,
+      port: 3210,
     },
   };
 });

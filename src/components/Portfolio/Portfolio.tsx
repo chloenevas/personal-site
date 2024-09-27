@@ -1,15 +1,17 @@
-import React from "react";
-import "../styles/Portfolio.css";
-import BrownFit from "./BrownFit";
+import "../../styles/Portfolio.css";
 import WeensyOS from "./WeensyOS";
-import Pacman from "./Pacman";
-import BroadbandAccess from "./BroadbandAccess";
+import Brush from "./Brush";
 import PersonalSite from "./PersonalSite";
+import BrownFit from "./BrownFit";
+import { useEffect } from "react";
 
-import weensyGif from "../assets/weensyTeaser.gif";
-import websiteGif from "../assets/website.gif";
+
 
 function Portfolio() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   return (
     <div>
       <div className="header">
@@ -17,23 +19,18 @@ function Portfolio() {
         <div className="underline-portfolio"> </div>
         <div className="header-border"> </div>
       </div>
-
       <div className="all-projects">
         <div>
-          <BrownFit />
+          <Brush />{" "}
+        </div>
+        <div>
+          <PersonalSite />{" "}
         </div>
         <div>
           <WeensyOS />
         </div>
         <div>
-          <PersonalSite />{" "}
-        </div>
-
-        <div>
-          <Pacman />{" "}
-        </div>
-        <div>
-          <BroadbandAccess />{" "}
+          <BrownFit />
         </div>
       </div>
     </div>

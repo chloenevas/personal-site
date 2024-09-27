@@ -1,4 +1,4 @@
-import React from "react";
+import {useEffect} from "react";
 
 import "../styles/AboutMe.css";
 
@@ -6,7 +6,10 @@ import photo from "../assets/photo.jpg"
 
 function AboutMe() {
 
-
+ useEffect(() => {
+   window.scrollTo(0, 0);
+ }, []);
+  
   return (
     <div>
       <div id="about-title"> About Me </div>

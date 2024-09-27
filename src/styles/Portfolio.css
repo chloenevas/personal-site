@@ -17,8 +17,8 @@
   margin-top: 10vh;
   margin-bottom: 10%;
   text-align: center;
+  height: 18%;
   width: 100%;
-    height: 18vh;
   z-index: 4;
   position: fixed;
   animation: portfolio-slide-in 2s;
@@ -134,8 +134,9 @@
 
 
 .brush {
-    height: 45vh;
-    width: auto;
+    
+    width: 50%;
+    height: auto;
     justify-content: center;
     margin-top: 2%;
     border-radius: 10px;
@@ -152,6 +153,8 @@
     margin-left: 3%;
     margin-right: 3%;
     text-align: justify;   
+      overflow: auto;
+
      /* overflow-wrap: break-word; Break long words if necessary */
   /* word-break: break-word; Ensures long words break properly */
   /* hyphens: auto;  */

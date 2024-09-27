@@ -17,7 +17,6 @@ function Portfolio() {
       <div className="header">
         <div id="portfolio-title"> Portfolio </div>
         <div className="underline-portfolio"> </div>
-        <div className="header-border"> </div>
       </div>
       <div className="all-projects">
         <div>

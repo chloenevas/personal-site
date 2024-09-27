@@ -18,14 +18,14 @@
   grid-template-columns: [col-start] 32% [line2] 15% [line3] 25% [line4] 12% [line5] 7% [line6] auto [col-end];
   grid-template-rows: [row-start] 10% [row-line2] 23% [row-line3] 6% [row-line4] 20% [row-line5] auto [row-end];
   height: 100vh; /* Full viewport height */
-  width: 100vh; /* Full width */
-  /* margin-left: 3%; */
+  width: 48vw; /* Full width */
+  margin-left: 1%;
   margin-top: -5%;
   position: relative;
 }
 
 #photo {
-  width: 30%;
+  width: 30vw;
   height: 52%;
   margin-left: 8%;
   margin-top: 3%;
@@ -35,15 +35,15 @@
 .text {
   font-family: "DM Serif Text", serif;
   color: #3e556f;
-  font-size: 20px;
-  background-color: #cfdded;
+  font-size: clamp(0.1rem, 2.5vw, 1.25rem);  background-color: #cfdded;
   border-radius: 50%;
-  padding: 20px;
-  margin: 3%;
+  padding: 2rem;
+  margin: 2rem auto;
   font-family: "DM Sans", sans-serif;
   line-height: 1.4;
   justify-content: center;
   align-content: center;
+  overflow: auto;
 }
 
 #blurb-1 {
@@ -56,6 +56,7 @@
   grid-row-end: row-line5;
   text-align: center;
   animation: blurb1-2-slide-in 3.8s;
+  
 }
 
 #blurb-2 {

@@ -4,50 +4,41 @@
 .header {
     display: flex;
     flex-direction: column;
-    margin-top: 4%;
+    margin-top: 8vh;
 }
 
 
 #portfolio-title {
   font-family: "DM Serif Text", serif;
-  font-size: 75px;
+  font-size: clamp(2rem, 5vw, 75px);
   color: #3e556f;
   background-color:rgba(245, 239, 235);
-  /* margin-top: 5%;
-  margin-bottom: 10%; */
   text-align: center;
-  height: 18%;
+  height: 18vh;
   width: 100%;
   z-index: 4;
   position: fixed;
   animation: portfolio-slide-in 2s;
+  border-bottom: #3e556f;
+  border-bottom-style: solid;
+  border-width: 0.2rem;
 }
 
 .underline-portfolio {
   height: 5px;
-  width: 35%;
-  margin-top: 7%;
+  width: 30vw;
+  margin-top: 13vh;
   background-color: #b4c7dd;
-  margin-left: 33%;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 5;
   position: fixed;
   animation: line-slide-in 2s;
 }
 
-.header-border {
-  height: 2px;
-  width: 100%;
-  margin-top: 8.6%;
-  background-color: #3e556f;
-  margin-left: auto;
-  margin-right: auto;
-  z-index: 5;
-  position: fixed;
-}
-
 .all-projects {
   display: flex;
-  margin-top: 8%;
+  margin-top: 14vh;
   justify-content: center;
   flex-direction: column;
   align-items: center;
@@ -117,7 +108,7 @@
     box-shadow: 0 0 25px 5px #3e556f;
     border-radius: 10px;
     height: 320px;
-                transition: width 0.5s ease, height 0.5s ease; /* Smooth transition for width and height */
+    transition: width 0.5s ease, height 0.5s ease; /* Smooth transition for width and height */
 
 }
 
@@ -149,8 +140,7 @@
     margin-left: 3%;
     margin-right: 3%;
     text-align: justify;   
-      overflow: auto;
-
+    overflow: auto;
      /* overflow-wrap: break-word; Break long words if necessary */
   /* word-break: break-word; Ensures long words break properly */
   /* hyphens: auto;  */
@@ -230,6 +220,8 @@
   .slide-content {
     flex-wrap: wrap;
     height: 400px;
+    overflow: auto;
+
   }
 
   .project-photo {

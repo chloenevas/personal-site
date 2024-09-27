@@ -186,10 +186,8 @@
   transform: scale(1.15);
 }
 
-
 .active-dot {
     background-color: #3E556F;
-
 }
 
 @keyframes portfolio-slide-in {
@@ -198,16 +196,9 @@
 } 
 
 @keyframes line-slide-in {
-  0% {transform: translateX(600px);}
+  0% {transform: translateX(500px);}
   100% {transform: translateY(0px);}
 } 
-
-/* @media (max-width: 1400px) {
-  .slide-content {
-    flex-wrap: wrap;
-    height: 360px;
-  }
-} */
 
 @media (max-width: 1200px) {
   .project-photo {
@@ -220,7 +211,6 @@
     flex-wrap: wrap;
     height: 400px;
     overflow: auto;
-
   }
 
   .project-photo {

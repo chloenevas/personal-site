@@ -61,9 +61,8 @@ useEffect(() => {
             I've been an undergraduate teaching <br />
             assistant for multiple introductory <br />
             CS classes, and I'm currently a head <br />
-            teaching assistant for Object Oriented Programming. I was also lucky
-            enough to <br />
-            spend this past summer as a lead teaching assistant for Girls Who
+            teaching assistant for Object Oriented Programming. I also spent
+            this past summer as a lead teaching assistant for Girls Who
             Code.
           </div>
         </div>

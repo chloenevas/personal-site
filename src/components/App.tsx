@@ -27,8 +27,7 @@ function App() {
 
     useEffect(() => {
       if (
-        currentPage === "Portfolio" ||
-        currentPage === "Home" 
+        currentPage === "Portfolio"
       ) {
         document.body.classList.add("scroll");
       } else {

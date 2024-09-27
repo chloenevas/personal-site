@@ -16,7 +16,7 @@
 .circles {
   display: grid;
   grid-template-columns: [col-start] 32% [line2] 15% [line3] 25% [line4] 12% [line5] 7% [line6] auto [col-end];
-  grid-template-rows: [row-start] 10% [row-line2] 23% [row-line3] 6% [row-line4] 20% [row-line5] auto [row-end];
+  grid-template-rows: [row-start] 10vh [row-line2] 23vh [row-line3] 6vh [row-line4] 20vh [row-line5] auto [row-end];
   height: 100vh; /* Full viewport height */
   width: 48vw; /* Full width */
   margin-left: 1%;

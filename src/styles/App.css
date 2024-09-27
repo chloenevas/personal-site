@@ -6,8 +6,8 @@ body, html {
   padding: 0;
   background-color: #F5EFEB; /* Your desired background color */
   height: 100%;
-  overflow: auto;
-  overflow-x: auto;
+  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .App {
@@ -16,6 +16,8 @@ body, html {
 
 .scroll {
   overflow: auto;
+  overflow-x: auto;
+
 }
 
 .Current-page {

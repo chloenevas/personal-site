@@ -19,7 +19,7 @@
   grid-template-rows: [row-start] 10% [row-line2] 23% [row-line3] 6% [row-line4] 20% [row-line5] auto [row-end];
   height: 100vh; /* Full viewport height */
   width: 100vh; /* Full width */
-  margin-left: 3%;
+  /* margin-left: 3%; */
   margin-top: -5%;
   position: relative;
 }
@@ -47,8 +47,8 @@
 }
 
 #blurb-1 {
-  width: 250px;
-  height: 250px;
+  width: 16vw;
+  height: 16vw;
   position: absolute;
   grid-column-start: col-start;
   grid-column-end: line3;
@@ -59,8 +59,8 @@
 }
 
 #blurb-2 {
-  width: 270px;
-  height: 270px;
+  width: 18vw;
+  height: 18vw;
   position: absolute;
   grid-column-start: line5;
   grid-column-end: line7;
@@ -71,8 +71,8 @@
 }
 
 #blurb-3 {
-  width: 450px;
-  height: 450px;
+  width: 30vw;
+  height: 30vw;
   position: absolute;
   grid-column-start: line2;
   grid-column-end: line5;

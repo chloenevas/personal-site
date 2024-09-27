@@ -4,7 +4,7 @@
 .header {
     display: flex;
     flex-direction: column;
-    margin-top: -1%;
+    margin-top: 4%;
 }
 
 
@@ -12,10 +12,9 @@
   font-family: "DM Serif Text", serif;
   font-size: 75px;
   color: #3e556f;
-  background-color:rgba(245, 239, 235, 0.9);
-
-  margin-top: 10vh;
-  margin-bottom: 10%;
+  background-color:rgba(245, 239, 235);
+  /* margin-top: 5%;
+  margin-bottom: 10%; */
   text-align: center;
   height: 18%;
   width: 100%;
@@ -24,12 +23,10 @@
   animation: portfolio-slide-in 2s;
 }
 
-
-
 .underline-portfolio {
   height: 5px;
-  width: 35vw;
-  margin-top: 24vh;
+  width: 35%;
+  margin-top: 7%;
   background-color: #b4c7dd;
   margin-left: 33%;
   z-index: 5;
@@ -40,7 +37,7 @@
 .header-border {
   height: 2px;
   width: 100%;
-  margin-top: 28vh;
+  margin-top: 8.6%;
   background-color: #3e556f;
   margin-left: auto;
   margin-right: auto;
@@ -50,7 +47,7 @@
 
 .all-projects {
   display: flex;
-  margin-top: 23vh;
+  margin-top: 8%;
   justify-content: center;
   flex-direction: column;
   align-items: center;
@@ -125,7 +122,7 @@
 }
 
 .project-photo {
-    width: 40vw;
+    width: 50%;
     aspect-ratio: 16/8;
     margin-top: 2%;
     border-radius: 10px;
@@ -134,7 +131,6 @@
 
 
 .brush {
-    
     width: 50%;
     height: auto;
     justify-content: center;

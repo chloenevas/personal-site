@@ -25,18 +25,16 @@ function App() {
     }
   };
 
-    // useEffect(() => {
-    //   if (
-    //     currentPage === "Portfolio" ||
-    //     currentPage === "Home" ||
-    //     currentPage === "About Me" ||
-    //      currentPage === "Resume"
-    //   ) {
-    //     document.body.classList.add("scroll");
-    //   } else {
-    //     document.body.classList.remove("scroll");
-    //   }
-    // }, [currentPage]);
+    useEffect(() => {
+      if (
+        currentPage === "Portfolio" ||
+        currentPage === "Home" 
+      ) {
+        document.body.classList.add("scroll");
+      } else {
+        document.body.classList.remove("scroll");
+      }
+    }, [currentPage]);
   
   return (
     <div className={`App`}>

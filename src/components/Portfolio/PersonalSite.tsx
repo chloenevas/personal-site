@@ -16,7 +16,7 @@ function Slide0() {
       <img className="project-photo" src={home} alt="Gif of personal site home page" />
       <div className="project-description">
         This is my personal website that I made to document myself and my work! Here you can find 
-        some info about me, my projects, and my resume. 
+        some info about me as well as some of my past projects.
       </div>
     </div>
   );

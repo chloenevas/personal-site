@@ -73,7 +73,7 @@ function App() {
           >
             Portfolio
           </div>
-          <div
+          {/* <div
             className={`${
               currentPage === "Resume" ? "Focus" : ""
             } Nav-bar-item `}
@@ -87,7 +87,7 @@ function App() {
             >
               Resume
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
       <div>{switchPage()}</div>
